@@ -14,10 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // hit the API endpoint
-        let urlString = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=18c65604ff8e48508b04fd0586666cbf"
-        
-        let url = URL(string: urlString)
+    
+        let url = URL(string: Constants.API_URL)
         
         guard url != nil else {
             return
